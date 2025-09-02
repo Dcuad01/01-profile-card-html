@@ -1,18 +1,28 @@
 /* Blank CSS file for profile card styles */
 
 body {
-    background-color: #add8e6;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #18181b;
+    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
+    color: #e0e0e0;
+}
+
+.main-decor {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #444 0%, #a239ca 50%, #444 100%);
+    border-radius: 2px;
+    margin: 2rem auto 1.5rem auto;
 }
 
 main {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background: #23232b;
+    border: 1px solid #444;
+    border-radius: 16px;
     max-width: 600px;
     margin: 3rem auto;
     padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+    position: relative;
 }
 
 main img {
@@ -22,26 +32,44 @@ main img {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid #444;
+    box-shadow: 0 2px 8px #222;
+}
+
+header h1,
+main h2,
+main h3,
+main h4 {
+    font-family: 'UnifrakturCook', 'EB Garamond', serif;
 }
 
 header h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 2rem;
-    color: #003366;
+    color: #e0e0e0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000, 0 0 2px #a239ca;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
 }
 
 main h2 {
     font-size: 2rem;
     text-align: center;
     margin-top: 1.5rem;
-    color: slategray;
+    color: #d3c6f3;
+    text-shadow: 1px 1px 2px #000;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.25rem;
 }
 
 main h3 {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
+    color: #a239ca;
+    text-shadow: 1px 1px 2px #000;
 }
 
 main p {
@@ -49,6 +77,18 @@ main p {
     line-height: 1.7;
     text-align: center;
     margin-top: 1rem;
+    color: #e0e0e0;
+    font-family: 'EB Garamond', serif;
+}
+
+main h4 {
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.25rem;
 }
 
 main ul {
@@ -61,3 +101,28 @@ main ul li {
     margin-bottom: 0.75rem;
     text-align: center;
 }
+
+main ul li a {
+    color: #d3c6f3;
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #a239ca;
+    padding-bottom: 2px;
+}
+
+main ul li a:hover {
+    color: #a239ca;
+    border-bottom: 1px solid #a239ca;
+}
+
+footer {
+    border-top: 2px solid #444;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: #b993d6;
+    font-family: 'EB Garamond', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=UnifrakturCook:wght@700&display=swap');
